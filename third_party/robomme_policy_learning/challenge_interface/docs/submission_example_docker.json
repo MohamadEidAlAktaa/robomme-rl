@@ -1,0 +1,13 @@
+{
+    "model_name": "perceptual-framesamp-modul",
+    "action_space": "joint_angle",
+    "use_depth": false,
+    "use_camera_params": false,
+    "email": "daiyp@umich.edu",
+    "evaluation_method": "docker",
+    "checkpoints":[
+      "https://huggingface.co/Yinpei/perceptual-framesamp-modul"
+    ],
+    "docker_image": "yinpeidai/perceptual-framesamp-modul:latest",
+    "command": "uv run python -m  challenge_interface.scripts.deploy --checkpoint-dir perceptual-framesamp-modul/79999"
+  }

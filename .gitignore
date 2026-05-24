@@ -1,0 +1,74 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.whl
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Modal
+.modal.toml
+
+# ML artifacts
+wandb/
+checkpoints/
+runs/
+outputs/
+logs/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Trajectory dumps
+trajectories/
+rollouts/
+*.h5
+*.hdf5
+*.npz
+*.npy
+
+# Data
+data/
+datasets/
+
+# Third party: bundled snapshot of RoboMME is checked in directly
+# (we opted to include it in-tree rather than treat as a git dependency).
+# Still ignore nested .git directories from the original clones so we don't
+# accidentally embed sub-repos.
+**/third_party/**/.git/
+
+# Misc
+*.log
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
